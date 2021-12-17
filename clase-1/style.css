@@ -1,22 +1,25 @@
-:root {
+/* :root {
     --white: #FFFFFF;
     --black: #000000;
     --very-light-pink: #c7c7c7;
     --text-input-field: #f7f7f7;
     --hospital-green: #ADC9B2;
+    --sm: 14xp;
+    --md: 16px;
+    --lg: 18px;
 }
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
-html {
+/* html {
     font-size: 62.5%;
-}
+} */
 
 body {
     font-family: 'Quicksand', sans-serif;
 
-   
+
 }
 
 .login {
@@ -25,3 +28,47 @@ body {
     display: grid;
     place-items: center;
 }
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+   width: 150px;
+   margin-bottom: 48px;
+   justify-self: center;
+   display: none;
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: nobe;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+} 
